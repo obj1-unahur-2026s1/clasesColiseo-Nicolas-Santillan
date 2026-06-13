@@ -26,18 +26,18 @@ class ArmaContundente inherits Arma {
 }
 
 class Armadura {
-    method puntosArmadura()
+    method puntosArmadura(unGladiador)
 }
 
 class Casco inherits Armadura {
-    override method puntosArmadura() {
+    override method puntosArmadura(unGladiador) {
         return 10
     }
 }
 
 class Escudo inherits Armadura {
-    override method puntosArmadura() {
-        return 5 + gladiador.destreza() * 0.1
+    override method puntosArmadura(unGladiador) {
+        return 5 + unGladiador.destreza() * 0.1
     }
 }
 
